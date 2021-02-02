@@ -2,6 +2,12 @@ package org.launchcode.studio7;
 
 public class CD extends BaseDisc implements OpticalDisc {
 
+
+
+    public CD(String discType, String name) {
+        super(discType, name);
+    }
+
     @Override
     public void spinDisc() {
 
@@ -19,17 +25,17 @@ public class CD extends BaseDisc implements OpticalDisc {
 
     @Override
     public double getCurrentStorageCapacity() {
-        return 0;
+        return this.currentStorageCapacity;
     }
 
     @Override
     public String getDiscType() {
-        return null;
+        return this.discType;
     }
 
     @Override
     public String getName() {
-        return null;
+        return this.name;
     }
 
     // TODO: Implement your custom interface.
